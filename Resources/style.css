@@ -1,0 +1,21 @@
+#sidebar {
+    
+    border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: solid;
+    background-color:rgb(230, 240, 236);
+    
+    
+}
+
+#data_set {
+    
+    border-style: dashed;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    resize: both;
+    /* padding: 10%; */
+}
