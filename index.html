@@ -18,38 +18,40 @@
 
 <body>
   <!-- NAV Bar  -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Weather Data Visualization</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"
-        aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <span class="navbar-brand" style="font-display:white;">Weather Data Visualization</span>
+      
+      <!-- #################################################### -->
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Dropdown
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
-            data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-            <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                <a class="dropdown-item" href="tempreture.html">Tempreture</a>
-                <a class="dropdown-item" href="humidity.html">Humidity</a>
-                <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
     </div>
-  </nav>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+      <a class="dropdown-item" href="tempreture.html">Tempreture</a>
+      <a class="dropdown-item" href="humidity.html">Humidity</a>
+      <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+      <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+
+    </div>
+        
+        
+
+    </div>
+  </div>
+
+
+
+
+
 
   <!-- ####################################################################### -->
+  <br>
 
-  <em><strong>
-      <p style="text-align: center;">Summary: Latitude vs. X</p>
-    </strong></em>
   <div class="container">
+    <h2 style="text-align: center;">Summary: Latitude vs. X</h2>
     <div class="row">
       <sidebar class="col-md-4"
         style="width: 30%; border-top: solid; border-right: solid; border-bottom: solid; border-left: solid; align-self: left;"
@@ -68,7 +70,10 @@
       <div class="col-md-1"></div>
 
       <div class="col-md-7">
-        <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To
+        <br>
+        <br>
+        <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: medium; font-color: black;">The purpose
+          of this project was to analyze how weather changes as you get closer to the equator. To
           accomplish this analysis,
           we first pulled fata from the OpenWeatherMap API to assemble a dataset on over 500 cities.
           After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors
@@ -77,24 +82,16 @@
           as part of the analysis,
           as well as explanations and descriptions of any trends and correlations witnessed.
         </p>
-
-
-        <div><button type="button" class="btn btn-light">
-          <a href="comparison.html">Weather Comparison</a>
-        </button></div>
-
-        <div><button type="button" class="btn btn-light">
-          <a href="Resources/Data.html">Data Presentation</a>
-        </button></div>
+        <br>
+        <br>
+        <button type="button" class="btn btn-primary btn-lg btn-block btn-light"><a href="comparison.html">Weather
+            Comparison</a></button>
+        <button type="button" class="btn btn-primary btn-lg btn-block btn-light"><a href="Resources/Data.html">Data
+            Presentation</a></button>
 
       </div>
-
     </div>
-
-
   </div>
-
-
 </body>
 
 </html>
