@@ -1,66 +1,100 @@
-<!-- explanation of the project  -->
-
-
-<!-- Links to each visualizations page -->
-<!-- sidebar contain preview image clicable to the related page -->
-
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-      
-      <meta charset="UTF-8">
-        <meta content="width=device-width, initial-scale=1.0">
-        <meta http-equiv=“X-UA-Compatible” content=“ie=edge”>
 
-        <title>Landing page</title>
-        
-        <!-- calling the bootstrap library -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="Resources/style.css" media="screen">
+<head>
 
-  
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0">
+  <meta http-equiv=“X-UA-Compatible” content=“ie=edge”>
 
-      </head>
-      <body>
-          <em><strong><p style="text-align: center;">Summary: Latitude vs. X</p></strong></em>
-          <div class="container" >
-              <div class="row">
-                <sidebar class="col-md-4" style="width: 30%; border-top: solid; border-right: solid; border-bottom: solid; border-left: solid; align-self: left;" id="sidebar">
-                    <div id="fig1"><u>Tempreture</u><a href= "tempreture.html"><img src="Resources/assets/images/Fig1.png" width="300px"></a></div>
-                    <div id="fig2"><u>Humidity</u><a href="humidity.html"><img src="Resources/assets/images/Fig2.png" width="300px"></a></div>
-                    <div id="fig3"><u>Cloudiness</u><a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" width="300px"></a></div>
-                    <div id="fig4"><u>Wind Speed</u><a href="windspeed.html"><img src="Resources/assets/images/Fig4.png" width="300px"></a></div>
-    
-    
-                  </sidebar>
-                  <div class="col-md-1"></div>
-    
-                  <div class="col-md-7">
-                      <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, 
-                        we first pulled fata from the OpenWeatherMap API to assemble a dataset on over 500 cities.
-                        After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at include: 
-                        tempreture, cloudiness, wind speed, and humidity. This site provides the source data and visualizatios created as part of the analysis, 
-                        as well as explanations and descriptions of any trends and correlations witnessed. 
-                      </p>
-                      
-                    
-                      <div>
-                        <a href="comparison.html">Weather Comparison</a>
-                    </div>
-                    <br>
+  <title>Landing page</title>
 
-                    <div>
-                      <a href="Resources/Data.html">Data Presentation</a>
-                  </div>
-    
-                  </div>
-                  
+  <!-- calling the bootstrap library -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="Resources/style.css" media="screen">
+
+</head>
+
+<body>
+  <!-- NAV Bar  -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Weather Data Visualization</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"
+        aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+            <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <a class="dropdown-item" href="tempreture.html">Tempreture</a>
+                <a class="dropdown-item" href="humidity.html">Humidity</a>
+                <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
               </div>
-                  
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-            </div>
-              
-        
-      </body>
+  <!-- ####################################################################### -->
+
+  <em><strong>
+      <p style="text-align: center;">Summary: Latitude vs. X</p>
+    </strong></em>
+  <div class="container">
+    <div class="row">
+      <sidebar class="col-md-4"
+        style="width: 30%; border-top: solid; border-right: solid; border-bottom: solid; border-left: solid; align-self: left;"
+        id="sidebar">
+        <div id="fig1"><u>Tempreture</u><a href="tempreture.html"><img src="Resources/assets/images/Fig1.png"
+              width="300px"></a></div>
+        <div id="fig2"><u>Humidity</u><a href="humidity.html"><img src="Resources/assets/images/Fig2.png"
+              width="300px"></a></div>
+        <div id="fig3"><u>Cloudiness</u><a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png"
+              width="300px"></a></div>
+        <div id="fig4"><u>Wind Speed</u><a href="windspeed.html"><img src="Resources/assets/images/Fig4.png"
+              width="300px"></a></div>
+
+
+      </sidebar>
+      <div class="col-md-1"></div>
+
+      <div class="col-md-7">
+        <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To
+          accomplish this analysis,
+          we first pulled fata from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+          After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors
+          we looked at include:
+          tempreture, cloudiness, wind speed, and humidity. This site provides the source data and visualizatios created
+          as part of the analysis,
+          as well as explanations and descriptions of any trends and correlations witnessed.
+        </p>
+
+
+        <div><button type="button" class="btn btn-light">
+          <a href="comparison.html">Weather Comparison</a>
+        </button></div>
+
+        <div><button type="button" class="btn btn-light">
+          <a href="Resources/Data.html">Data Presentation</a>
+        </button></div>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+</body>
+
 </html>
