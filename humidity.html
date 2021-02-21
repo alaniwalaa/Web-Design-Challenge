@@ -1,26 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta content="width=device-width, initial-scale=1.0">
-        <meta http-equiv=“X-UA-Compatible” content=“ie=edge”>
 
-        <title>Humidity Page</title>
-        
-        <!-- calling the bootstrap library -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="Resources/style.css" media="screen">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0">
+    <meta http-equiv=“X-UA-Compatible” content=“ie=edge”>
 
-        
-    </head>
+    <title>Humidity Page</title>
 
-    <body>
+    <!-- calling the bootstrap library -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="Resources/style.css" media="screen">
+
+</head>
+
+<body>
+    <div class="container">
         <title>Humidity</title>
-        <h1 style="text-align: center;">City Latitude vs Humidity</h1>
-        <img src="Resources/assets//images/Fig2.png" style="align-items: center;">
-        <p>* A descriptive title and heading tag.
-            * The plot/visualization itself for the selected comparison.
-            * A paragraph describing the plot and its significance.</p>
-        <button type="button" class="btn btn-info"><a style="font-family:Verdana, Geneva, Tahoma, sans-serif ; color:white ;" href="index.html">HOME</a></button>
-    </body>
-</html> 
+        <div class="row">
+
+            <sidebar class="col-md-4"
+                style="width: 30%; border-top: solid; border-right: solid; border-bottom: solid; border-left: solid; align-self: left;"
+                id="sidebar">
+                <br>
+                <div id="fig1"><u>Tempreture</u><a href="tempreture.html"><img src="Resources/assets/images/Fig1.png"
+                            width="280px"></a></div>
+                <div id="fig3"><u>Cloudiness</u><a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png"
+                            width="280px"></a></div>
+                <div id="fig4"><u>Wind Speed</u><a href="windspeed.html"><img src="Resources/assets/images/Fig4.png"
+                            width="280px"></a></div>
+            </sidebar>
+
+            <div class="col-md-1"></div>
+
+            <div class="col-md-7">
+                <br>
+                <br>
+                <h1 style="text-align: center;">City Latitude vs Humidity</h1>
+                <img src="Resources/assets//images/Fig2.png" style="align-items: center;">
+                <p>* A descriptive title and heading tag.
+                    * The plot/visualization itself for the selected comparison.
+                    * A paragraph describing the plot and its significance.</p>
+                <button type="button" class="btn btn-info"><a
+                        style="font-family:Verdana, Geneva, Tahoma, sans-serif ; color:white ;"
+                        href="index.html">HOME</a></button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
