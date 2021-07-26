@@ -12,3 +12,5 @@ HTML, CSS and Bootstrap, Pandas (using Jupyter Notebook)
 
 The pages are responsive to fit the presenting media 
 
+
+Screen Shot 2021-07-25 at 9.00.32 PM<img width="948" alt="Screen Shot 2021-07-25 at 9 00 32 PM" src="https://user-images.githubusercontent.com/51308869/126931703-9467f3ba-2665-42c9-96d4-8f8a44990097.png">
